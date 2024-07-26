@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mp - tela de login tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="box-border font-sans bg-gradient-to-r from-indigo-950 to-green-500"
+  >
+    <div class="w-4/5 h-3/6 mt-48 ml-20 flex flex-col p-12 z-0">
+      <h1 class="text-6xl text-green-400">Faça seu login</h1>
+
+      <div
+        class="container w-72 text-sm mt-12 flex flex-col items-center space-y-8"
+      >
+        <form action="" class="space-y-4" id="form">
+          <div class="flex flex-col">
+            <label for="nome" class="font-normal text-sm text-green-300"
+              >Email</label
+            >
+            <input
+              type="email"
+              name="email"
+              id="nome"
+              class="w-64 h-12 px-2 rounded-lg outline-0 border-solid border rounded-lg border-green-600 text-l bg-green-200 text-indigo-950 focus:border-4"
+            />
+          </div>
+
+          <div class="flex flex-col">
+            <label for="password" class="font-normal text-sm text-green-300"
+              >Senha</label
+            >
+            <input
+              type="password"
+              name="password"
+              id="password"
+              class="w-64 h-12 px-2 rounded-lg outline-0 border-solid border rounded-lg border-green-600 text-l bg-green-200 text-indigo-950 focus:border-4"
+            />
+          </div>
+          <a href="#" class="text-end underline decoration-1 text-green-400"
+            ><p class="">Esqueci minha senha</p></a
+          >
+          <input
+            type="submit"
+            value="Entrar"
+            class="w-64 h-12 px-2 rounded-lg outline-0 border-solid border rounded-lg border-green-800 text-xl cursor-pointer bg-green-400 text-indigo-950 font-medium"
+          />
+        </form>
+        <a href="#" class="underline decoration-1 text-green-400"
+          ><p>Ainda não tenho conta</p></a
+        >
+      </div>
+    </div>
+
+    <div
+      class="bg-gray-950/70 w-screen h-screen fixed left-0 top-0 z-10"
+      id="transparency"
+    ></div>
+    <div
+      class="modal transition ease-in-out delay-150 rounded-lg fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50  bg-red-700 hover:bg-green-700 hover:-translate-y-1 hover:scale-110 duration-300"
+      id="modal"
+    >
+      <div
+        class=" text-m w-96 h-16 cursor-pointer text-indigo-100 font-medium flex justify-center items-center"
+      >
+        <p class="">Pelo menos um dos campos não foi preenchido</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
